@@ -8,6 +8,7 @@ html {
 body {
     font-family: 'Roboto', sans-serif;
     font-size: 16px;
+    box-sizing: border-box;
 }
 
 .meet-container {
@@ -64,6 +65,7 @@ body {
     border-radius: 50%;
     border: 5px solid #fff;
     flex-shrink: 0;
+    box-sizing: border-box;
 }
 .meet-room__name {
     flex: 1;
@@ -72,5 +74,56 @@ body {
     font-size: 24px;
     padding: 20px 0;
     font-weight: 500;
-    max-width: 310px;
+    max-width: 300px;
+}
+
+ /* tablet and mobile <= 1023px */
+@media (max-width: 1023px) {
+    .meet-room__img img {
+        width: 250px;
+        height: 250px;
+    }
+    .meet-room__name {
+        max-width: 250px;
+    }
+    .meet-heading {
+        font-size: 56px;
+    }
+    .meet-room-heading {
+        font-size: 40px;
+    }
+}
+ /* mobile */
+@media (max-width: 46.1875em) {
+    .meet-heading {
+        font-size: 32px;
+        padding-left: 64px;
+    }
+    .meet-heading::before {
+        width: 50px;
+    }
+    .meet-room-heading {
+        font-size: 28px;
+        padding: 32px 0 24px;
+    }
+    .meet-room__img img {
+        width: 150px;
+        height: 150px;
+        border-width: 3px;
+    }
+    .meet-room__name {
+        max-width: 150px;
+        font-size: 18px;
+        padding: 14px 0;
+    }
+    .meet-room {
+        margin-bottom: 32px;
+    }
+    .meet-room-item + .meet-room-item {
+        margin-left: 0;
+    }
+    .meet-room-item {
+        margin: 16px;
+    }
+
 }

@@ -1,0 +1,76 @@
+html {
+    box-sizing: border-box;
+}
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+}
+
+.meet-container {
+    background-color: #7d1337;
+    padding: 80px 0;
+}
+.meet-heading {
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 64px;
+    position: relative;
+    padding-left: 120px;
+}
+.meet-heading::before {
+    position: absolute;
+    content: '';
+    width: 100px;
+    height: 100%;
+    background-color: #fff;
+    left: 0;
+}
+.meet-room {
+    margin-bottom: 56px;
+}
+.meet-room-heading {
+    text-align: center;
+    color: #fff;
+    font-size: 48px;
+    text-transform: uppercase;
+    font-weight: 500;
+    padding: 60px 0 50px;
+}
+.meet-room-block {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.meet-room-block + .meet-room-block {
+    margin-top: 20px;
+}
+.meet-room-item + .meet-room-item{
+    margin-left: 32px;
+}
+.meet-room-item {
+    display: flex;
+    flex-direction: column;
+}
+.meet-room__img img {
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 5px solid #fff;
+    flex-shrink: 0;
+}
+.meet-room__name {
+    flex: 1;
+    text-align: center;
+    color: #fff;
+    font-size: 24px;
+    padding: 20px 0;
+    font-weight: 500;
+    max-width: 310px;
+}

@@ -92,6 +92,9 @@ body {
     .meet-room-heading {
         font-size: 40px;
     }
+    .meet-room-mb {
+        display: none;
+    }
 }
  /* mobile */
 @media (max-width: 46.1875em) {
@@ -124,6 +127,12 @@ body {
     }
     .meet-room-item {
         margin: 16px;
+    }
+    .meet-room-pc {
+        display: none;
+    }
+    .meet-room-mb {
+        display: block;
     }
 
 }
